@@ -7,8 +7,8 @@ services:
       - '81:81'
       - '443:443'
     volumes:
-      - ./data:/data
-      - ./letsencrypt:/etc/letsencrypt
+      - /mnt/portainer-compose-unpacker/stacks/nginx-proxy-manager/nginx-proxy-manager/data:/data
+      - /mnt/portainer-compose-unpacker/stacks/nginx-proxy-manager/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
 #    labels:
 #      - homepage.group=Server - Networking
 #      - homepage.name=Nginx Proxy Manager
